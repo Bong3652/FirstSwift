@@ -37,6 +37,7 @@
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="welcomepress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSs-IO-YAo"/>
+                                    <segue destination="Rl8-l3-xPA" kind="show" id="jXy-1C-1SW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,10 +55,44 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="X4k-Hh-hnD">
+            <objects>
+                <viewController id="Rl8-l3-xPA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hg7-mg-YjP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="birdkey" translatesAutoresizingMaskIntoConstraints="NO" id="iuv-36-jdq">
+                                <rect key="frame" x="67" y="82" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ga-Pa-bLS">
+                                <rect key="frame" x="59" y="231" width="257" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You Must Buy a SwiftKey to continue!">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72865484840764894" green="0.8975950120477324" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="z2Z-Go-qwd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0M-nj-9kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807.20000000000005" y="33.733133433283363"/>
+        </scene>
     </scenes>
     <resources>
         <image name="2000px-Swift_logo.svg" width="2000" height="1800"/>
         <image name="Hello-Swift (1)" width="634" height="89"/>
+        <image name="birdkey" width="570" height="427"/>
         <image name="sky_background_with_sun_and_sea-" width="300" height="200"/>
     </resources>
 </document>

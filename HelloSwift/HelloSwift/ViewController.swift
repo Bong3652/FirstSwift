@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         bird.isHidden=false
         welcomebtn.isHidden=true
     }
-    
-
+    var food = "PIE"
 }
+
 
