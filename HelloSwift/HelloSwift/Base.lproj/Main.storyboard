@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2000px-Swift_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="MWZ-fp-CG5">
-                                <rect key="frame" x="-4" y="271" width="338" height="213"/>
+                                <rect key="frame" x="-4" y="273" width="338" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-hr-l3p">
@@ -63,24 +64,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="birdkey" translatesAutoresizingMaskIntoConstraints="NO" id="iuv-36-jdq">
-                                <rect key="frame" x="67" y="82" width="240" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ke-gf-D6B">
+                                <rect key="frame" x="24" y="202" width="327" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-xQ-3zj">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="birdkey" translatesAutoresizingMaskIntoConstraints="NO" id="iuv-36-jdq">
+                                <rect key="frame" x="84.5" y="66" width="206" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ToE-DQ-TGj"/>
+                                    <constraint firstAttribute="width" constant="206" id="XGG-VL-ZH8"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ga-Pa-bLS">
-                                <rect key="frame" x="59" y="231" width="257" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="You Must Buy a SwiftKey to continue!">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You Must Purchase a SwiftKey to continue!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLe-d5-rFp">
+                                <rect key="frame" x="24" y="214" width="327" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="OYy-wO-3UR"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="gro-d9-4l3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFN-kL-5VB">
+                                <rect key="frame" x="26" y="242" width="323" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moh-JX-Dwt">
+                                <rect key="frame" x="26" y="260" width="323" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.72865484840764894" green="0.8975950120477324" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nFN-kL-5VB" firstAttribute="leading" secondItem="Hg7-mg-YjP" secondAttribute="leadingMargin" constant="10" id="VMR-GO-jSE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nFN-kL-5VB" secondAttribute="trailing" constant="10" id="ZI0-R8-ROA"/>
+                            <constraint firstItem="iuv-36-jdq" firstAttribute="centerX" secondItem="z2Z-Go-qwd" secondAttribute="centerX" id="afq-3F-pqG"/>
+                            <constraint firstItem="moh-JX-Dwt" firstAttribute="leading" secondItem="nFN-kL-5VB" secondAttribute="leading" id="h5H-Zo-etU"/>
+                            <constraint firstItem="moh-JX-Dwt" firstAttribute="trailing" secondItem="nFN-kL-5VB" secondAttribute="trailing" id="kAx-jW-wOY"/>
+                            <constraint firstItem="yLe-d5-rFp" firstAttribute="centerX" secondItem="iuv-36-jdq" secondAttribute="centerX" id="kXn-SV-AiT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="z2Z-Go-qwd"/>
                     </view>
                 </viewController>
