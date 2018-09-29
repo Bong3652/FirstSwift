@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var QuailtyPicker: UIPickerView!
     @IBOutlet weak var QualityBtn: UIButton!
+    @IBOutlet weak var ContBtn: UIButton!
     let qkey = ["Old SwiftKey", "Good SwiftKey", "Great SwiftKey", "Ultra SwiftKey", "Lengendary SwiftKey"]
     
     override func viewDidLoad() {
@@ -35,7 +36,9 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         QualityBtn.setTitle(qkey[row], for: UIControlState.normal)
         QuailtyPicker.isHidden = true
+        ContBtn.isHidden = false
     }
+    
     
     /*
     // MARK: - Navigation

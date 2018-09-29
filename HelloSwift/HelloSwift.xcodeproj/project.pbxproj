@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185038DF215FEA67002A4EA7 /* BirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185038DE215FEA67002A4EA7 /* BirdViewController.swift */; };
 		18CD745F214CA2E8004326C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD745E214CA2E8004326C8 /* AppDelegate.swift */; };
 		18CD7461214CA2E8004326C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD7460214CA2E8004326C8 /* ViewController.swift */; };
 		18CD7464214CA2E8004326C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD7462214CA2E8004326C8 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185038DE215FEA67002A4EA7 /* BirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdViewController.swift; sourceTree = "<group>"; };
 		18CD745B214CA2E8004326C8 /* HelloSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CD745E214CA2E8004326C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CD7460214CA2E8004326C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				18CD745E214CA2E8004326C8 /* AppDelegate.swift */,
 				18CD7460214CA2E8004326C8 /* ViewController.swift */,
 				18F9123321587C69003CEEA3 /* SecondViewController.swift */,
+				185038DE215FEA67002A4EA7 /* BirdViewController.swift */,
 				18CD7462214CA2E8004326C8 /* Main.storyboard */,
 				18CD7465214CA2EA004326C8 /* Assets.xcassets */,
 				18CD7467214CA2EA004326C8 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				18F9123421587C69003CEEA3 /* SecondViewController.swift in Sources */,
 				18CD7461214CA2E8004326C8 /* ViewController.swift in Sources */,
 				18CD745F214CA2E8004326C8 /* AppDelegate.swift in Sources */,
+				185038DF215FEA67002A4EA7 /* BirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
