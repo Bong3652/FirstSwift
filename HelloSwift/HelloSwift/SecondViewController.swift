@@ -21,15 +21,20 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     @IBAction func QuailtySelect(_ sender: AnyObject) {
-        func numberOfComponents(in: UIPickerView) -> Int {
-            return 1
-        }
-        func pickerView(_ pickerview: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return qkey.count
-        }
-        func pickerView(_ pickerview: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return qkey[row]
-        }
+        QuailtyPicker.isHidden = false
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerview: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return qkey.count
+    }
+    func pickerView(_ pickerview: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return qkey[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        QualityBtn.setTitle(qkey[row], for: UIControlState.normal)
+        QuailtyPicker.isHidden = true
     }
     
     /*
